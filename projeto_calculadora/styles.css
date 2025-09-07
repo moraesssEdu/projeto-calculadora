@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centraliza tudo na tela */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+    color: #004d40;
+    font-size: 24px;
+}
+
+/* Campo de exibição */
+#display {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Grade de botões */
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões padrão */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0097a7;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Efeito hover */
+button:hover {
+    background-color: #006064;
+    transform: scale(1.05);
+}
+
+/* Botão C ocupa linha inteira */
+#C {
+    grid-column: 1 / span 4;
+    background-color: #d32f2f;
+}
+
+#C:hover {
+    background-color: #b71c1c;
+}
+
+/* Botão = com destaque (se estiver presente) */
+#btn-equal {
+    background-color: #43a047;
+}
+
+#btn-equal:hover {
+    background-color: #2e7d32;
+}
+
